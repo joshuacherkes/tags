@@ -1,0 +1,8 @@
+<h1>All Photos</h1>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<% @photos.each do |photo| %>
+<a href="<%= photo_url(photo) %>">
+<img src="<%= photo.link %>"alt="<%= photo_url(photo) %>">
+</a>
+<br>
+<% end %>
